@@ -1,0 +1,2187 @@
+
+
+@font-face {
+  font-family: 'pangaiaUltraLight';
+  src: url('../fonts/pangaia/pangaia-ultralight.otf') format('opentype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'pangaiaBold';
+  src: url('../fonts/pangaia/pangaia-bold.otf') format('opentype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'pangaiamed';
+  src: url('../fonts/pangaia/pangaia-medium.otf') format('opentype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+
+
+
+
+@font-face {
+  font-family: 'ttdrugs';
+  src: url('../fonts/tt_drugs/tt_drugs_trial_regular.ttf') format('opentype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ttdrugsbold';
+  src: url('../fonts/tt_drugs/tt_drugs_trial_bold.ttf') format('opentype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+.bold {
+
+  font-family: ttdrugsbold;
+
+}
+
+
+.flx {
+  display: flex;
+}
+
+
+body {
+  margin: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.cajah {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;  
+  background-color: white;
+  border-bottom: 2px solid;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo {
+  font-family: 'pangaiaUltraLight', system-ui, sans-serif;
+  margin-right: 40px;
+}
+
+.logo a {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #000;
+}
+
+.logo a:visited {
+  color: #000;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 50px; 
+}
+
+
+.menuprin {
+  font-family: 'pangaiaUltraLight', system-ui, sans-serif;
+  display: flex;
+  gap: 50px; 
+  font-size: 18px; 
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+}
+
+.menuprin a {
+  text-decoration: none;
+  color: rgb(133, 133, 133);
+  transition: 0.2s ease;
+}
+
+.menuprin a:hover {
+  color: #000;
+  transform: scale(1.1);
+}
+
+.menuprin li a.activo {
+  color: #000;
+}
+
+
+.buscico {
+  display: flex;
+  gap: 25px;
+}
+
+.buscico a img {
+  width: 22px; 
+  height: 22px;
+  object-fit: contain;
+}
+
+
+
+.secin1 {
+
+background-color: #eededd;
+height: 100vh;
+background-size: cover;
+background-attachment: fixed;
+
+padding-top: 400px;
+}
+
+
+
+.cajintr {
+
+padding-left: 200px;
+
+}
+
+.cajintr h1 {
+
+  font-family: 'pangaiaUltraLight', system-ui, sans-serif;
+  font-weight: 300;
+  font-size: 70px;
+  margin-bottom: 30px; 
+}
+
+
+
+.cajintr p {
+  margin-top: 0; 
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 20px;
+}
+
+
+.boton1 {
+
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  background-color: #c7a9a6; 
+  width: 200px; 
+  border-radius: 100px; 
+  padding: 20px; 
+  text-align:center; 
+}
+
+.boton1:hover {
+
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  background-color: #997e79; 
+  width: 200px; 
+  border-radius: 100px; 
+  padding: 20px; 
+  text-align:center; 
+  transition: all .5s
+}
+
+.boton1 a {
+
+  text-decoration: none;
+  color: black;
+}
+
+.boton1 a:hover {
+
+  text-decoration: none;
+  color: black;
+}
+
+.boton1 a:visited {
+
+  text-decoration: none;
+  color: black;
+}
+
+.img6 {
+position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 1;                  
+  transform: translateY(-50%) scaleX(-1);
+}
+
+.img6 img {
+  height: 100vh;
+  width: auto;
+  display: block;
+}
+
+
+
+.hero-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+.tarjcaj {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+  font-family: system-ui, sans-serif;
+}
+
+.tarj {
+  flex: 1 1 280px;          
+  max-width: 620px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 0px 24px 50px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.tarjp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  width: 100%;
+}
+
+.tarjti {
+  font-family: 'pangaiaUltraLight', system-ui, sans-serif;
+  font-size: 60px;
+  font-weight: 200;
+  margin: 0;
+  color: #222;
+  text-align: center;
+  padding-left: 50px;
+}
+
+.tarjimg {
+  width: 170px;
+  height: auto;
+  object-fit: contain;
+  padding-top: 60px;  
+  padding-right: 30px;
+}
+
+
+.tarjbutu {
+  margin-top: 0;
+  padding-top: 0;
+padding-left: 70px;    
+
+}
+
+.tarjbut {
+  align-self: flex-start;
+  background: #c7a9a6;
+  color: #000;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.tarjbut:hover {
+  background: #977977;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.secin3 {
+padding: 40px 20px;
+}
+
+.noscont {
+  position: relative;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #f7f3f3;
+  padding-bottom: 40px;
+}
+
+.nosleft {
+  flex: 1 1 400px;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative; 
+}
+
+.circulo {
+  position: absolute;
+  top: 5px;          
+  left: -155px;        
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #c7a9a6;
+  font-family: 'pangaiaUltraLight', system-ui, sans-serif;
+  font-size: 24px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;        
+}
+
+.nostit {
+  font-family: 'pangaiaUltraLight', system-ui, sans-serif;
+  font-size: 60px;
+  font-weight: 200;
+  margin: 0;
+}
+
+.nosp {
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.nosbut {
+    align-self: flex-start;
+    background: #c7a9a6;
+    color: #000;
+    padding: 12px 24px;
+    border-radius: 9999px;
+    font-family: 'ttdrugs', system-ui, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background 0.2s;
+    margin-top: 8px;  
+}
+
+.nosbut:hover {
+    background: #997d7a;
+}
+
+
+.nosright {
+  flex: 1 1 400px;
+  max-width: 520px;
+  padding-top: 50px;
+  padding-left: 100px;
+}
+
+.nosright img {
+
+  width: 100%;
+  width: 600px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+.secin4 {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.sec4tit {
+  font-family: 'pangaiaUltraLight', system-ui, sans-serif;
+  font-size: 60px;
+  font-weight: 200;
+  margin-bottom: 50px;
+}
+
+
+.sec4grid {
+  display: flex;
+  justify-content: center;
+  gap: 50px;              
+  flex-wrap: wrap;
+}
+
+
+.prod {
+  flex: 0 1 320px;         
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  
+}
+
+.prodimg {
+  width: 220px;
+  height: 300px ;
+  object-fit: cover ;
+  border-radius: 12px;
+
+}
+
+.prodtit {
+  font-family: 'pangaiaUltraLight', system-ui, sans-serif;
+  font-size: 26px;
+  font-weight: 200;
+  margin: 0;
+
+}
+
+.prodtxt {
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 16px;
+  color: #555;
+}
+
+.prodprecio {
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 30px;
+}
+
+
+.vermas {
+  display: inline-block;
+  margin-top: 60px;
+  background: #c7a9a6;
+  color: #000;
+  padding: 12px 28px;
+  border-radius: 9999px;
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.vermas:hover {
+  background: #b79996;
+}
+
+
+
+
+
+
+
+
+
+.secin5 {
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 50vh; 
+  background: #f7f3f3; 
+}
+
+.dctotit {
+  font-family: 'pangaiaUltraLight', system-ui, sans-serif;
+  font-size: 52px;
+  font-weight: 200;
+  margin: 0 0 12px;
+  color: #000;
+}
+
+.dctofecha {
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 18px;
+  margin: 0 0 18px;
+  color: #555;
+}
+
+
+.dcto-btn {
+  display: inline-block;
+  background: #c7a9a6;
+  color: #000;
+  padding: 14px 32px;
+  border-radius: 9999px;
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.dcto-btn:hover {
+  background: #b79996;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.secin6 {
+  padding: 40px 20px;
+}
+
+.clitit1 {
+  font-family: 'pangaiaUltraLight', system-ui, sans-serif;
+  font-size: 60px;
+  font-weight: 200;
+  margin: 0 0 50px;
+  text-align: center;               
+}
+
+.cligrid {
+  display: flex;
+  gap: 40px;
+  justify-content: center; 
+  flex-wrap: wrap;             
+}
+
+
+.clitarj {
+  display: flex;
+  width: 100%;
+  max-width: 590px;    
+  max-height: 300px;         
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.clinom {
+  font-family: 'pangaiaUltraLight', system-ui, sans-serif;
+  font-size: 26px;
+  font-weight: 200;
+  margin: 0;
+}
+
+.cliest {
+  display: flex;
+  gap: 2px;
+}
+
+.cliest img {
+  width: 18px;
+  height: 18px;
+}
+
+.clitxt {
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding-top: 40px;
+}
+
+
+.cliizq {
+  flex: 1 1 60%;
+  padding: 30px 20px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+.clider {
+  flex: 0 0 40%;
+  position: relative;
+}
+
+.cliavatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sec7 {
+  padding: 40px 20px 100px;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: center;
+;
+}
+
+.relatitulo {
+  font-family: 'pangaiaUltraLight', system-ui, sans-serif;
+  font-size: 60px;
+  font-weight: 200;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+
+.relagrid {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+
+.relatarj {
+  flex: 0 1 320px;          
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+
+.relaimagen {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+
+.relatexto {
+  padding: 25px 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  flex-grow: 1;               
+}
+
+.relap {
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+}
+
+
+.relaboton {
+  background: #c7a9a6;
+  color: #000;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.relaboton:hover {
+  background: #b79996;
+}
+
+
+
+
+
+
+
+
+
+.pie {
+  background: #f0e8e8;;
+  padding: 60px 20px 30px;
+  font-family: 'ttdrugs', system-ui, sans-serif;
+}
+
+.piecont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto 30px;
+}
+
+
+.piecol {
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.piemarca {
+  font-family: 'pangaiaUltraLight', system-ui, sans-serif;
+  font-size: 32px;
+  margin: 0;
+}
+
+.pietexto {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.piereds {
+  display: flex;
+  gap: 10px;
+}
+
+.piereds img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s;
+}
+
+.piereds img:hover {
+  transform: scale(1.15);
+}
+
+.piesubtit {
+  font-family: 'pangaiaUltraLight', system-ui, sans-serif;
+  font-size: 22px;
+  margin: 0 0 10px;
+}
+
+.pielista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pielista li {
+  margin-bottom: 8px;
+}
+
+.pielista a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.pielista a:hover {
+  color: #c7a9a6;
+}
+
+.piederechos {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+.rs{
+  color:  #c7a9a6;
+  font-size: 25px;
+}
+
+.redes ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: o;
+}
+
+.pieredes a:hover .rs {
+  scale: 1.2;
+  color: black;
+}
+
+
+.mapa {
+  filter: sepia(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nos1 {
+font-family: 'pangaiamed', system-ui, sans-serif;
+margin-top: 150px;
+background-color:#f0e4e3;
+padding: 100px;
+font-size: 40px;
+text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.sec8 {
+  padding: 80px 20px;
+}
+
+.historiacont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  align-items: center;
+  justify-content: space-between; 
+  width: 100%;
+  max-width: 1800px;  
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.historiatxt {
+  flex: 1 1 55%;
+  min-width: 280px;   
+}
+
+.historiatit {
+  font-family: 'pangaiaUltraLight', system-ui, sans-serif;
+  font-size: 70px; 
+
+  margin: 0 0 25px;
+  color: #000;
+}
+
+.historiap {
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 21px;
+  line-height: 1.7;
+  color: #333;
+  margin: 0;
+  padding-right: 50px;
+}
+
+.historiaimg {
+  flex: 1 1 40%;
+  min-width: 250px;
+}
+
+.historia-img img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sec9 {
+  padding: 80px 20px;
+}
+
+.filocont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1800px;  
+  margin: 0 auto;
+    padding-top: 80px;
+}
+
+.filoizq {
+  flex: 1 1 55%;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: relative;
+}
+
+.filotit {
+  font-family: 'pangaiaUltraLight', system-ui, sans-serif;
+  font-size: clamp(40px, 5vw, 60px);
+  font-weight: 200;
+  margin: 0;
+  color: #000;
+}
+
+.filop {
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: clamp(16px, 2vw, 18px);
+  line-height: 1.7;
+  color: #333;
+  margin: 0;
+}
+
+.filoimg-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+
+}
+
+.filoimg {
+  width: 100%;
+  max-width: 1000px;
+  height: 350px;
+  border-radius: 20px;
+  object-fit: cover;
+  display: block;
+  object-position: 50% 15%;
+}
+
+
+
+.filoder {
+  flex: 1 1 40%;
+  min-width: 280px;
+  padding-top: 90px;
+}
+
+.filolista {
+  list-style: none;
+  margin: 0 0 40px;
+  padding: 0;
+}
+
+.filolista li {
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.filobullet {
+  color: #c7a9a6;
+  font-weight: 900;
+}
+
+.filohtit {
+  font-family: 'pangaiaBold', system-ui, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 15px;
+  color: #000;
+}
+
+.filohp {
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+.secin10 {
+  padding: 100px 20px;
+}
+
+.clitit2 {
+  font-family: 'pangaiaUltraLight', system-ui, sans-serif;
+  font-size: 60px;
+  font-weight: 200;
+  margin: 0 0 50px;
+  text-align: left; 
+  padding-left: 25px;
+}
+
+.cligrid2 {
+  display: flex;
+  gap: 20px;
+  justify-content: center; 
+  flex-wrap: wrap;
+}
+
+
+.clitarj2 {
+  display: flex;
+  width: 100%;
+  max-width: 590px;    
+  max-height: 300px;         
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.secin11 {
+  padding: 80px 55px;
+}
+
+.comentcont {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+
+.comentavatar {
+  flex: 0 0 60px;
+}
+
+.comentavatar img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.comentder {
+  flex: 1;
+}
+
+.comentnombre {
+  font-family: 'pangaiaUltraLight', system-ui, sans-serif;
+  font-size: 26px;
+  font-weight: 200;
+  margin: 0 0 8px;
+  color: #000;
+}
+
+.comentstars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.comentstars img {
+  width: 18px;
+  height: 18px;
+}
+
+.comentavisible {
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 14px;
+  color: #888;
+  margin: 0 0 12px;
+}
+
+.comentcaja {
+  padding: 15px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 15px;
+  color: #555;
+  background: transparent;
+  padding-bottom: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.secin12 {
+  padding: 10px 20px; 
+}
+
+.pmvcaja {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  background: #f8e4e2; 
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.pmvtit {
+  font-family: 'pangaiaUltraLight', system-ui, sans-serif;
+  font-size: 48px;
+  font-weight: 200;
+  color: #000;
+  margin: 0;
+}
+
+.pmvicons {
+  display: flex;
+  gap: 35px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.circ {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform .3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: relative;          
+}
+
+
+.circ img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: filter .3s ease;
+}
+
+
+.circ:hover {
+  transform: scale(1.15);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.circ:hover img {
+  filter: brightness(0.6);
+}
+
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: 'pangaiaUltraLight', system-ui, sans-serif;
+  font-size: 22px;
+  font-weight: 200;
+  opacity: 0;
+  transition: opacity .3s ease;
+  pointer-events: none;
+  text-align: center;
+}
+
+
+
+.circ:hover .overlay {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.secin13 {
+  padding: 50px 20px;
+}
+
+.catbox {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  background: #f8e4e2;        
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.cattit {
+  font-family: 'pangaiaUltraLight', system-ui, sans-serif;
+  font-size: 48px;
+  font-weight: 200;
+  color: #000;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+
+.catnav {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 1;
+}
+
+.catnav a {
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 26px;
+  color: #000;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+.catnav a:hover {
+  color: #c7a9a6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.secin14 {
+  padding: 10px 20px;
+}
+
+.precajas {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.precio-caja {
+  flex: 1 1 320px;
+  background: #f8e4e2;
+  border-radius: 30px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.pretit {
+  font-family: 'pangaiaUltraLight', system-ui, sans-serif;
+  font-size: 28px;
+  font-weight: 200;
+  color: #000;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.slider-line {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+
+.precio-slider {
+  flex: 1;
+  -webkit-appearance: none;
+  height: 6px;
+  background: #c7a9a6;
+  border-radius: 6px;
+  outline: none;
+}
+.precio-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #c7a9a6;
+  cursor: pointer;
+}
+
+.busqueda-caja {
+  flex: 1 1 320px;
+  background: #fff;
+  border-radius: 30px;
+  padding: 0 30px;         
+  height: 112px;          
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+
+.busqueda-caja input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 18px;
+  color: #000;
+}
+
+.busqueda-caja img {
+  width: 24px;
+  height: 24px;
+  opacity: .6;
+}
+
+
+.secin15 {
+  padding: 30px 20px;
+}
+
+
+
+.secin16 {
+
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.pasanav {
+  display: inline-flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.pasacirc {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #c7a9a6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'pangaiaUltraLight', system-ui, sans-serif;
+  font-size: 22px;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.pasacirc img {
+  width: 24px;
+  height: 24px;
+}
+
+
+.pasacirc:hover {
+  background: #997e79;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.secin17 {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+    padding-bottom: 40px;
+    padding-top: 50px;
+}
+
+.blogimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+    object-position: 50% 30%;
+}
+
+
+
+
+.sec18 {
+  position: relative;
+}
+
+
+.micronav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+  background-color: #f0e4e3;
+}
+
+.micronav a {
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 20px;
+  color: #333;
+  text-decoration: none;
+  transition: color .2s;
+}
+
+.micronav a:hover {
+  color: #c7a9a6;
+}
+
+
+.sliderwrap {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.sliderimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sliderbtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #c7a9a6;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background .3s;
+}
+
+.sliderbtn img {
+  width: 24px;
+  height: 24px;
+}
+
+.sliderbtn.left  { left: 20px;  }
+.sliderbtn.right { right: 20px; }
+
+.sliderbtn:hover {
+  background: #997e79;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contaimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+    object-position: 50% 53%;
+}
+
+
+
+
+.sec19 {
+  padding: 40px 10px; 
+  
+}
+
+.contactgrid {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.contactoc {
+  flex: 1 1 300px;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.contactico {
+  width: 100px;
+  height: 100px;
+}
+
+.contactbox {
+  background: #f8e4e2;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+
+.contactdata {
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 16px;
+  color: #000;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+.sec20 {
+  padding: 60px 20px;
+  background: #f0e4e3;
+
+}
+
+.hablanos {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+
+
+}
+
+.hablanostit {
+  font-family: 'pangaiaUltraLight', system-ui, sans-serif;
+  font-size: 48px;
+  font-weight: 200;
+  color: #000;
+  margin: 0 0 10px;
+}
+
+.hablanossub {
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.hablanosform {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hablanosfila {
+  display: flex;
+  gap: 20px;
+}
+
+.hablanosbox {
+  flex: 1;
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .08);
+}
+
+.hablanoscoment {
+  min-height: 120px;
+}
+
+.hablanosbtn {
+  align-self: center;
+  background: #c7a9a6;
+  color: #000;
+  padding: 14px 32px;
+  border-radius: 9999px;
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+
+.sec21 {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.mapa {
+  max-width: 100%;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+}
+
+.sec22 {
+  padding: 60px 20px;
+  background: #f0e4e3;
+}
+
+.chatwrap {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.chatcabe {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.mariaava {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #c7a9a6;
+  overflow: hidden;
+  border: 3px none #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.mariaava img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.chatgr {
+  text-align: left;
+}
+
+.chattit {
+  font-family: 'pangaiaUltraLight', system-ui, sans-serif;
+  font-size: 48px;
+  font-weight: 200;
+  color: #000;
+  margin: 0 0 6px;
+}
+
+.chatsub {
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}
+
+
+.chatbox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;   
+}
+
+.chatmsg {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0,0,0,.08);
+  min-height: 120px;
+  text-align: left;
+  width: 100%;
+  resize: none;
+  border: none;
+  outline: none;
+  cursor: default;
+}
+
+.chatbtn {
+  background: #c7a9a6;
+  color: #000;
+  padding: 14px 32px;
+  border-radius: 9999px;
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 16px;
+  border: none;
+}
+
+.chatbtn:hover {
+  background: #c7a9a6;
+  color: #000;
+  padding: 14px 32px;
+  border-radius: 9999px;
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 16px;
+  border: none;
+}
+
+.chatbtn:disabled {
+  opacity: 0.8;
+}
+
+
+
+.secin23 {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.unetecard {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.uneteizq {
+  flex: 1 1 60%;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.unetetit {
+  font-family: 'pangaiaUltraLight', system-ui, sans-serif;
+  font-size: 32px;
+  font-weight: 200;
+  margin: 0 0 16px;
+  color: #000;
+}
+
+.unetetxt {
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.unetedr {
+  flex: 0 0 40%;
+}
+
+.uneteavatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+
+
+
+
+
+
+
+.secin24 {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 15px;
+}
+
+
+.blogmain {
+  flex: 1 1 65%;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.08);
+  overflow: hidden;
+}
+
+.blogtoprow {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.blogmainimg {
+  width: 350px;
+  height: 550px;
+  object-fit: cover;
+
+  flex-shrink: 0;
+  padding-left: 15px;
+  padding-top: 30px;
+  padding-bottom: 0;
+}
+
+.blogintro {
+  flex: 1;
+  padding-top: 6px;
+  padding-right: 15px;
+}
+
+.blogintro p {
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.blogfulltext {
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.7;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+.blogsidebar {
+  flex: 1 1 35%;
+}
+
+.sidebartitle {
+  font-family: 'pangaiaUltraLight', system-ui, sans-serif;
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.sidebarbox {
+  background: #fce8e6; 
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.sidebarbox2 {
+  background: #fce8e6; 
+  border-radius: 20px;
+  padding: 1px 20px 20px 20px;
+}
+
+.recentpost {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.recentpost:last-child {
+  margin-bottom: 0;
+}
+
+.recentpost img {
+  width: 70px;
+  height: 70px;
+
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.recentpost div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.recentpost h3 {
+  font-family: 'pangaiaUltraLight', system-ui, sans-serif;
+  font-size: 16px;
+  margin: 0 0 4px;
+  color: #000;
+}
+
+.recentpost p {
+    font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 13px;
+  color: #555;
+  margin: 0;
+}
+
+
+
+.tagbox {
+  background: #fce8e6;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.tagtitulo {
+  font-family: 'pangaiaUltraLight', system-ui, sans-serif;
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.taggrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.taggrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.tag {
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 14px;
+  color: #c7a9a6;
+  background: #fff;
+  padding: 8px 12px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.tag:hover {
+  background: #c7a9a6;
+  color: #fff;
+}
+
+.buscarcaja {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  border-radius: 999px;
+  padding: 10px 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.08);
+
+}
+
+.buscarcaja input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 14px;
+  color: #333;
+  background: transparent;
+}
+
+.buscarcaja img {
+  width: 18px;
+  height: 18px;
+  opacity: .6;
+}
+
+
+
+
+
+.secin25 {
+  display: flex;
+  max-width: 1200px;        
+  margin: 40px auto 0;
+  padding: 0 15px;            
+}
+
+.autorcard {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 740px;                
+  background: #fce8e6;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.08);
+  padding: 30px;
+}
+
+.autorizq {
+  flex-shrink: 0;
+}
+
+.autorimg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.autorder {
+  flex: 1;
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  color: #333;
+}
+
+.autornombre {
+  font-family: 'pangaiaUltraLight', system-ui, sans-serif;
+  font-size: 24px;
+  margin: 0 0 6px;
+  color: #000;
+}
+
+.autorfecha {
+  font-size: 14px;
+  color: #888;
+  margin: 0 0 10px;
+}
+
+.autordesc {
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+.btnpostear {
+  display: block;
+  margin-top: 15px;
+  background: #c7a9a6;
+  color: #000;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 28px;
+  font-family: 'ttdrugs', system-ui, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btnpostear:hover {
+  background: #997e79;
+}
